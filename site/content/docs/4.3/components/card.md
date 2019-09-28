@@ -379,11 +379,11 @@ Note that content should not be larger than the height of the image. If content 
 
 ## Horizontal
 
-Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way. In the example below, we remove the grid gutters with `.no-gutters` and use `.col-md-*` classes to make the card horizontal at the `md` breakpoint. Further adjustments may be needed depending on your card content.
+Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way. In the example below, we remove the grid gutters with `.g-0` and use `.col-md-*` classes to make the card horizontal at the `md` breakpoint. Further adjustments may be needed depending on your card content.
 
 {{< example >}}
 <div class="card mb-3" style="max-width: 540px;">
-  <div class="row no-gutters">
+  <div class="row g-0">
     <div class="col-md-4">
       {{< placeholder width="100%" height="250" text="Image" >}}
     </div>
@@ -692,7 +692,7 @@ Change it to `.row-cols-3` and you'll see the fourth card wrap.
 When you need equal height, add `.h-100` to the cards. If you want equal heights by default, you can set `$card-height: 100%` in Sass.
 
 {{< example >}}
-<div class="row row-cols-1 row-cols-md-3">
+<div class="row row-cols-1 row-cols-md-3 g-44">
   <div class="col mb-4">
     <div class="card h-100">
       {{< placeholder width="100%" height="140" class="card-img-top" text="Image cap" >}}
